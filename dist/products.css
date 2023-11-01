@@ -1,0 +1,183 @@
+/* fonts
+font-family: 'Outfit', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Major+Mono+Display&family=Outfit:wght@200;400&display=swap');
+/*
+font-family: 'Amatic SC', cursive;
+font-family: 'Major Mono Display', monospace;
+font-family: 'Outfit', sans-serif;
+*/
+
+:root{
+    --primaryColor-white: #fff;
+    --primaryColor-grey: #f2f2f2;
+    --primaryColor-green: #c1f651;
+    --font-grey: #365200;
+    --font-dark-grey: #212121;
+}
+body {
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primaryColor-grey);
+}
+.name h2 {
+    font-size: 1.5rem;
+}
+.name h5 {
+    font-size: 0.9rem;
+    letter-spacing: 7px;
+    color: rgba(82, 79, 79, 0.838);
+}
+.product-pics {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+}
+.product-pic {
+    width: 100vw;
+    height: 60vh;
+    object-fit: cover;
+}
+.pic-btns {
+    display: flex;
+    width: 40vw;
+    margin: auto;
+    margin-top: 0;
+    padding-top: 0;
+    justify-content: space-evenly;
+}
+.pic-btns button {
+    border: 3px solid white;
+    border-radius: 12px;
+    background-color: white;
+    margin: 0.1rem;
+    height: 6rem; 
+    overflow: hidden;
+    opacity: 0.5;
+    transition: 0.2s opacity;
+}
+.pic-btns button:hover {
+    opacity: 1;
+}
+.btn-pic {
+    object-fit: cover;
+    border-radius: 12px;
+    height: inherit;
+}
+.circle-btns {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.cbtn {
+    width: 1rem;
+    height: 1rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 50%;
+    box-shadow: -1px 0 11px gray;
+    cursor: pointer;
+}
+.btn-border {
+    border: 2px solid white;
+}
+.cbtn:nth-child(1) {
+    background: linear-gradient(to bottom, black 0%, black 50%,white 50%,white 100%);
+}
+.cbtn:nth-child(2) {
+    background-color: black;
+}
+.cbtn:nth-child(3) {
+    background-color: gray;
+}
+.cbtn:nth-child(4) {
+    background-color: rgb(1, 1, 100);
+}
+.cbtn:nth-child(5) {
+    background-color: rgb(211, 246, 71);
+}
+.switch {
+    right: 50%;
+}
+.switch-btn span{
+    display: inline-block;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: 0.5s right ease-in-out;
+}
+.slide .switch {
+    left: 50%;
+}
+@media (min-width:767px) {
+    body {
+        background-color: white;
+    }
+    .product-part {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 0.5rem;
+    }
+    .desc {
+        grid-area: 1 / 2 / 2 / 2;
+    }
+    .btns-container {
+        grid-area: -1 / 2 / 1 / 2;
+        background-color: rgba(252, 252, 252, 0);
+        height: 40rem;
+        width: 100%;
+        display: flex;
+        justify-items: left;
+        align-items: center;
+        z-index: 10;
+    }
+    .desc-btn {
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .name h2 {
+        font-size: 1.6rem;
+    }
+    .name h5 {
+        font-size: 1.1rem;
+    }
+    .price-tag {
+        font-size: 1.5rem;
+    }
+    .pic-btns {
+        display: none;
+    }
+    .product-pics {
+        display: grid;
+        height: auto;
+        background-color: white;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.3rem;
+        padding-left: 0.5rem;
+    }
+    .product-pic {
+        display: block;
+        cursor: zoom-in;
+    }
+    .video {
+        z-index: 100;
+    }
+    .circle-btns {
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
+    .color {
+        font-size: 1.2rem;
+    }
+    
+}
+
+
+
